@@ -1,108 +1,108 @@
-:root{
-    --primary-color:#659b5e;
+/*Her er vores temafarver og skrifttype i projektet*/
+:root {
+    --primary-color: #659b5e;
     --secondary-color: #000000;
-    --tertiary-color:#f2f5de;
+    --tertiary-color: #f2f5de;
     --quarternary-color: #96c5f7;
     --quinary-color: #ffd60a;
-    --font-set: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-set: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
     margin: 0;
     background-color: var(--tertiary-color);
     font-family: var(--font-set);
+    padding: 0;
 }
 
-.logo{
-    width: 90%;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.settings{
-    position: absolute;
-    right: 0;
+/*Her har vi stylet navigationsbaren*/
+.navigation {
+    background-color: var(--tertiary-color);
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
     top: 0;
 }
 
-.settings i{
-    color: var(--secondary-color);
-    font-size: 26px;
-    padding: 10px;
-}
-
-.buttons{
-    margin-top: -30px;
-    margin-bottom: 80px;
-}
-
-h2{
-    text-align: center;
-}
-
-.button{
-    background-color: var(--quarternary-color);
-    border-radius: 30px;
-    padding: 3px;
-    margin: 15px 25px;
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
-}
-
-.buttonpremium{
-    text-align: center;
-    padding: 1px 5px;
-    background-color: var(--quinary-color);
-    border-radius: 30px;
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
-    z-index: 2;
-    position: absolute;
+.logo {
     width: 100px;
-    margin-left: 65%;
-    transform: rotate(15deg);
-    margin-top: -10px;
-}
-
-.navigation{
-    background-color: var(--primary-color);
-    width: 100%;
-    bottom: 0;
-    z-index: 3;
-    position: fixed;
-}
-
-.navigation ul{
-    list-style-type: none;
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto auto auto auto auto;
-    padding: 10px;
-    margin: 0;
-}
-
-.navigation ul li a{
-    text-decoration: none;
     display: block;
-    color: var(--secondary-color);
-    padding: 10px 5px;
-    text-align: center;
-    font-size: 26px;
+    padding: 8px;
+}
+
+.nav-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
     margin: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/*Her er stylingen der laver hamburger menuen.*/
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: var(--secondary-color);
     font-size: 26px;
-    border-radius: 10px;
+    display: block;
+    padding: 8px;
 }
 
-.active{
-    background-color: #8bc284;
+.hamburger:focus {
+    outline: none;
 }
 
-@media screen and (min-width:750px){
-    .logo{
-        width: 50%;
+.nav-ul.show {
+    display: flex;
+}
+
+.show {
+    display: block;
+}
+@media screen and (min-width: 395px) {
+    .nav-ul{
+        margin-right: 120px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .nav-ul{
+        margin-right: 220px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .hamburger {
+        display: none;
     }
 
-    .button{
-        margin: 15px 200px;
+    .nav-ul {
+        display: block;
+        flex-direction: none;
+        margin: 0;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .nav-ul li {
+        display: inline-block;
     }
 }
