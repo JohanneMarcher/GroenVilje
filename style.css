@@ -75,6 +75,20 @@ body {
 .show {
     display: block;
 }
+.omosh1 { 
+    margin-top: 30px;
+}
+.logostor {
+    height: 210px;
+}
+
+.omosp{
+    margin: 0%;
+}
+.forstekasse{
+    width: 100%;
+}
+
 @media screen and (min-width: 395px) {
     .nav-ul{
         margin-right: 120px;
