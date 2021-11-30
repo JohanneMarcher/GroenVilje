@@ -76,17 +76,57 @@ body {
     display: block;
 }
 .omosh1 { 
-    margin-top: 30px;
+    margin-top: 90px;
+    margin-left: 70px;
 }
-.logostor {
-    height: 210px;
+.medarbejdere{
+    margin-left: 60px;
 }
-
+.medarbejdere img {
+    width: 250px;
+    margin-bottom: 5px;
+}
+.medarbejdere p {
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+.omosh2{ 
+    margin: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
 .omosp{
-    margin: 0%;
+    margin: 5px;
+    margin-bottom: 20px;
+    line-height: 20px;
 }
-.forstekasse{
+.overstkasse{
     width: 100%;
+    padding-top: 5px;
+}
+.omospa{
+    margin-bottom: 50px;
+    margin: 5px;
+    line-height: 20px;
+}
+.andenkassenederst{
+    background-color: var(--primary-color);
+}
+.instagram i {
+    font-size: 100px;
+    color: var(--secondary-color);
+    margin: 15px;
+    color: var(--quinary-color);
+}
+.linkedin i {
+    font-size: 100px;
+    margin: 15px;
+    color: var(--quarternary-color);
+}
+.facebook {
+    font-size: 100px;
+    margin: 15px;
+    color: var(--quarternary-color)
 }
 
 @media screen and (min-width: 395px) {
@@ -118,5 +158,13 @@ body {
 
     .nav-ul li {
         display: inline-block;
+    }
+    .medarbejdere{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .omosh1{
+        margin-top: 150px;
+        text-align: center;
     }
 }
