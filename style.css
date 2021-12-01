@@ -75,6 +75,7 @@ body {
 .show {
     display: block;
 }
+
 .omosh1 { 
     margin-top: 90px;
     margin-left: 70px;
@@ -174,6 +175,52 @@ body {
     margin-right: auto;
     display: block;
 }
+.baggrund1{
+    width: 100%;
+    margin-top: 82px;
+    z-index: -2;
+}
+
+.overskrift1{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.text1{
+    font-size: 15px;
+    text-align: center;
+    margin-top: -15px;
+}
+.box1{
+    border: 5px solid #659b5e;
+}
+
+.baggrund2{
+    width: 100%;
+    margin-top: 0px;
+    z-index: -2;
+}
+.overskrift2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.text2{
+    font-size: 15px;
+    text-align: center; 
+    margin-top: -15px;
+}
+.goderåd{
+    border: 5px solid #659b5e;  
+}
+.opskrifter{
+    width: 100%;
+    margin-top: 0px;
+    z-index: -2;
+}
+       
+
 
 .mobil{
     width: 100%;
@@ -255,6 +302,7 @@ body {
     }
 }
 
+
 @media screen and (min-width: 700px) {
     .howtocontainer{
         margin-top: 170px;
@@ -297,6 +345,7 @@ body {
     .howtocontainer{
         margin-top: 330px;
     }
+<<<<<<< Updated upstream
 
     .index{
         margin-left: 200px;
@@ -310,3 +359,6 @@ body {
 
 
     
+=======
+}
+>>>>>>> Stashed changes
