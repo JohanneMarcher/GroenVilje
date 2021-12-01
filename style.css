@@ -263,3 +263,22 @@ body {
         margin-top: 330px;
     }
 }
+
+.mobil{
+    flex-wrap: wrap;
+}
+
+.index{
+   font-size: 26px;
+   text-align: center;
+   padding: 5px 10px;
+   margin: 15px;
+   background-color:var(--quarternary-color);
+   border-radius: 30px;
+   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+   vertical-align: top;
+}
+
+
+
+    
