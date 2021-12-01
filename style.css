@@ -175,6 +175,21 @@ body {
     display: block;
 }
 
+.mobil{
+    width: 100%;
+}
+
+.index{
+   font-size: 26px;
+   text-align: center;
+   padding: 10px 20px;
+   margin: 15px;
+   background-color:var(--quarternary-color);
+   border-radius: 30px;
+   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+   vertical-align: top;
+}
+
 @media screen and (min-width: 395px) {
     .nav-ul{
         margin-right: 120px;
@@ -223,6 +238,21 @@ body {
     .howtocontainer{
         margin-top: 110px;
     }
+
+    .mobil{
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+
+    .index{
+        padding: 50px 20px;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -256,28 +286,26 @@ body {
     .texthowto{
         margin-top: -500px;
     }
+
+    .mobil{
+        width: 400px;
+        margin-left: 30px;
+    }
 }
 
 @media screen and (min-width: 970px) {
     .howtocontainer{
         margin-top: 330px;
     }
+
+    .index{
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: -20px;
+    }
 }
 
-.mobil{
-    flex-wrap: wrap;
-}
 
-.index{
-   font-size: 26px;
-   text-align: center;
-   padding: 5px 10px;
-   margin: 15px;
-   background-color:var(--quarternary-color);
-   border-radius: 30px;
-   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
-   vertical-align: top;
-}
 
 
 
