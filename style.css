@@ -175,10 +175,10 @@ body {
     margin-right: auto;
     display: block;
 }
+
 .baggrund1{
     width: 100%;
     margin-top: 82px;
-    z-index: -2;
 }
 
 .overskrift1{
@@ -219,8 +219,6 @@ body {
     margin-top: 0px;
     z-index: -2;
 }
-       
-
 
 .mobil{
     width: 100%;
@@ -235,6 +233,37 @@ body {
    border-radius: 30px;
    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
    vertical-align: top;
+}
+
+/*Vores footer*/
+.social{
+    font-size: 24px;
+    color: var(--quinary-color);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.socialh3{
+    color: var(--quinary-color);
+    font-size: 26px;
+    text-align: center;
+}
+
+.logoblad{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+footer{
+    background-color: black;
+    padding: 5px;
+    padding-bottom: 30px;
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 395px) {
@@ -307,6 +336,11 @@ body {
     .howtocontainer{
         margin-top: 170px;
     }
+
+    .baggrund1{
+        height: 350px;
+        object-fit: cover;
+    }
 }
 
 @media screen and (min-width: 740px) {
@@ -339,13 +373,18 @@ body {
         width: 400px;
         margin-left: 30px;
     }
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
 }
 
 @media screen and (min-width: 970px) {
     .howtocontainer{
         margin-top: 330px;
     }
-    
+
     .index{
         margin-left: 200px;
         margin-right: 200px;
